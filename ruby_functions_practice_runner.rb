@@ -75,10 +75,8 @@ puts "Days until Christmas is #{days_till_christmas(today)} days"
 
 
 ####Given a date of birth, calculate how old a person born on that date would be
-now = Date.new(2010, 1, 1)
-date_of_birth = Date.new(2000, 1, 1)
 
-puts "You are #{calculate_age(now, date_of_birth)} years old"
+puts current_age
 
 
 

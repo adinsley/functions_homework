@@ -80,21 +80,33 @@ def days_till_christmas(today)
   (christmas_day - today).to_i
 end
 
-def calculate_age(now, date_of_birth)
-    (now - date_of_birth).to_i 
+
+
+
+
+
+
+
+def age_response(age)
+  case age
+   when 30..100
+    "#{age} You are oo old for this game"
+  when 0..30 
+    "#{age} You have much time to learn young paduwam"
+  else
+     "#{age}, I think that you have added your date of birth incorrectly"
+   end 
 end
 
- 
+def current_age
+    puts "Hi what is your date of birth (YYYY-MM-DD)"
+    date_of_birth = Date.parse(gets.chomp)
+    age_now = calculate_age(date_of_birth)
+    puts age_response(age_now)
+    
+end    
 
-
-
-
-
-
-
-
-
-
-
-
-
+def calculate_age(date_of_birth)
+    now = Date::today
+    (now - date_of_birth).to_i/365
+end
