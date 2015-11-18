@@ -61,6 +61,8 @@ def side_to_volume(side_length)
   side_length**3
 end
 
+#.......................................
+
 def volume_of_sphere
   puts "What is the radius of your sphere"
   radius = gets.chomp.to_i
@@ -71,9 +73,14 @@ def calculate_sphere_volume(radius)
   (4 * Math::PI * (radius**3) )/ 3
 end
 
+
+# ...............................................
+
 def rectangle_volume(side1, side2, side3)
   side1 * side2 * side3
 end  
+
+#...................................................
 
 def days_till_christmas(today)
   christmas_day = Date.new(2015, 12, 25)
@@ -83,14 +90,14 @@ end
 
 
 
-# Age functions
+# Age functions.....................................
 
 def age_response(age)
   case age
    when 30..100
     "#{age} You are oo old for this game"
   when 0..30 
-    "#{age} You have much time to learn young paduwam"
+    "#{age} You have much time to learn young Padawan"
   else
      "#{age}, I think that you have added your date of birth incorrectly"
    end 
