@@ -83,9 +83,7 @@ end
 
 
 
-
-
-
+# Age functions
 
 def age_response(age)
   case age
@@ -99,7 +97,7 @@ def age_response(age)
 end
 
 def current_age
-    puts "Hi what is your date of birth (YYYY-MM-DD)"
+    puts "Hi what is your date of birth eg. (3rd Feb 2001)"
     date_of_birth = Date.parse(gets.chomp)
     age_now = calculate_age(date_of_birth)
     puts age_response(age_now)
